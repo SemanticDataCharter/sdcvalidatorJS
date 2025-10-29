@@ -4,6 +4,5 @@
  * @module core
  */
 
-// Exports will go here
-// export { XMLSchema11 } from './schema';
-// export { validate } from './validator';
+export * from './schema.js';
+export * from './validator.js';

@@ -4,7 +4,6 @@
  * @module utils
  */
 
-// Exports will go here
-// export * from './xml';
-// export * from './xpath';
-// export * from './namespaces';
+export * from './xml.js';
+export * from './xpath.js';
+export * from './namespaces.js';

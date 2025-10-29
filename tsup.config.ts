@@ -54,13 +54,5 @@ export default defineConfig({
   // Keep original names
   keepNames: true,
 
-  // Banner for CLI executable
-  banner: ({ format }) => {
-    if (format === 'cjs') {
-      return {
-        js: '#!/usr/bin/env node',
-      };
-    }
-    return {};
-  },
+  // Don't add banner here - the shebang is already in the source file
 });

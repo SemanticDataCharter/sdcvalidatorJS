@@ -1,0 +1,39 @@
+# Source files (only ship dist/)
+src/
+tests/
+examples/
+
+# Configuration files
+tsconfig.json
+tsconfig.build.json
+tsup.config.ts
+vitest.config.ts
+eslint.config.js
+.prettierrc
+.prettierignore
+
+# Development files
+.github/
+.vscode/
+.idea/
+*.test.ts
+*.spec.ts
+
+# Documentation source (keep README.md, LICENSE)
+docs/
+PRD.md
+
+# Build artifacts
+coverage/
+*.tsbuildinfo
+*.log
+.env
+.env.*
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# CI/CD
+.github/

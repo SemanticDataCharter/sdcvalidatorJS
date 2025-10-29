@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person xmlns="http://example.com/person" id="P003">
+  <name>Bob Johnson</name>
+  <!-- Missing required 'age' element -->
+  <status>active</status>
+</Person>

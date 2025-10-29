@@ -140,7 +140,6 @@ vite.config.ts.timestamp-*
 
 # Project-specific
 dist/
-docs/
 *.tgz
 
 # IDE

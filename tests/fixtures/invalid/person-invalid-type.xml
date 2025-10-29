@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Person xmlns="http://example.com/person" id="P002">
+  <name>Jane Smith</name>
+  <age>not_a_number</age>
+  <email>invalid-email</email>
+  <status>active</status>
+</Person>

@@ -6,6 +6,8 @@
  * @module cli
  */
 
+/* eslint-disable no-console */
+
 import { Command } from 'commander';
 import { readFile } from 'fs/promises';
 import { fileURLToPath } from 'url';

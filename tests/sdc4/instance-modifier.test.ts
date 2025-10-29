@@ -6,7 +6,6 @@ import { describe, it, expect, beforeEach } from 'vitest';
 import { InstanceModifier, type ErrorLocation } from '../../src/sdc4/instance-modifier.js';
 import { ExceptionalValueType } from '../../src/sdc4/constants.js';
 import { parseXML } from '../../src/utils/xml.js';
-import { DOMParser } from '@xmldom/xmldom';
 
 describe('InstanceModifier', () => {
   let modifier: InstanceModifier;
@@ -309,6 +308,7 @@ describe('InstanceModifier', () => {
       modifier.injectExceptionalValues(doc, errors);
 
       // Check that the document contains a comment (implementation detail)
+      // eslint-disable-next-line no-undef
       const serializer = new (require('@xmldom/xmldom').XMLSerializer)();
       const xmlOutput = serializer.serializeToString(doc);
 
@@ -396,7 +396,8 @@ describe('InstanceModifier', () => {
       [ExceptionalValueType.PINF, 'Positive Infinity'],
       [ExceptionalValueType.NINF, 'Negative Infinity'],
       [ExceptionalValueType.TRC, 'Truncated']
-    ])('should handle ExceptionalValueType.%s (%s)', async (evType, expectedName) => {
+      // eslint-disable-next-line no-unused-vars
+    ])('should handle ExceptionalValueType.%s (%s)', async (evType, _expectedName) => {
       const xmlString = '<root></root>';
       const doc = await parseXML(xmlString);
 

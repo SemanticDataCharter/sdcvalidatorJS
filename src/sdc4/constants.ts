@@ -10,6 +10,7 @@
  * These types classify validation errors into standardized categories
  * for data quality management and reporting.
  */
+/* eslint-disable no-unused-vars */
 export enum ExceptionalValueType {
   /** Invalid: Value does not conform to expected type/format */
   INV = 'INV',
@@ -56,6 +57,7 @@ export enum ExceptionalValueType {
   /** Trace: Value present in trace amounts */
   TRC = 'TRC',
 }
+/* eslint-enable no-unused-vars */
 
 /**
  * Metadata for each ExceptionalValue type.

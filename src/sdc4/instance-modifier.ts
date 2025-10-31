@@ -5,7 +5,8 @@
  */
 
 
-import { ExceptionalValueType, EXCEPTIONAL_VALUE_METADATA } from './constants.js';
+import type { ExceptionalValueType} from './constants.js';
+import { EXCEPTIONAL_VALUE_METADATA } from './constants.js';
 import { createNamespacedElement, ensureSDC4Namespace } from '../utils/namespaces.js';
 import { selectSingleNode } from '../utils/xpath.js';
 
@@ -164,6 +165,7 @@ export class InstanceModifier {
    * @param newElement - Element to insert
    * @param _targetXPath - XPath of where element should be inserted
    */
+  // eslint-disable-next-line no-unused-vars
   private insertElement(parent: Element, newElement: Element, _targetXPath: string): void {
     // For now, insert as first child to preserve order
     // In a more sophisticated implementation, we would analyze the schema

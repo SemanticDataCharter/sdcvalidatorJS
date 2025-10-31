@@ -4,6 +4,8 @@
  * @module sdc4/error-mapper
  */
 
+/* eslint-disable no-unused-vars */
+
 import { ExceptionalValueType, EXCEPTIONAL_VALUE_METADATA } from './constants.js';
 import type { ValidationError, ErrorSummary } from '../types/validator.js';
 

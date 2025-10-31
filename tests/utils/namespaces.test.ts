@@ -151,7 +151,7 @@ describe('Namespace Utilities', () => {
     });
 
     it('should return false for elements with wrong namespace', async () => {
-      const doc = await parseXML('<root xmlns:other="http://other.com/"><other:INV/></root>');
+      // eslint-disable-next-line no-undef
       const parser = new (require('@xmldom/xmldom').DOMParser)();
       const otherDoc = parser.parseFromString(
         '<root xmlns:other="http://other.com/"><other:INV/></root>',

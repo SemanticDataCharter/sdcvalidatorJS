@@ -4,6 +4,7 @@
  * @module core/validator
  */
 
+/* eslint-disable no-unused-vars */
 
 import type { ValidationError, SchemaSource } from '../types/validator.js';
 
@@ -55,7 +56,7 @@ export function createValidator(customValidator?: XSDValidator): XSDValidator {
   // Try to load xsd-schema-validator if available
   try {
     // Dynamic import to handle optional dependency
-    // eslint-disable-next-line @typescript-eslint/no-var-requires
+    // eslint-disable-next-line no-undef
     const xsdValidator = require('xsd-schema-validator');
     return new XSDSchemaValidatorAdapter(xsdValidator);
   } catch {

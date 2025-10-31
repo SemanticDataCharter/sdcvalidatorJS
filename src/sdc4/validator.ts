@@ -285,6 +285,7 @@ export class SDC4Validator {
     });
 
     // Write to file
+    // eslint-disable-next-line no-undef
     await writeFile(outputPath, xml, encoding.toLowerCase() as BufferEncoding);
   }
 

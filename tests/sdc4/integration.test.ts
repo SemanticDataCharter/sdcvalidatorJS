@@ -85,10 +85,8 @@ describe('SDC4Validator Integration', () => {
 
       const xmlPath = join(__dirname, '../fixtures/valid/person-valid.xml');
       const originalDoc = await parseXML(xmlPath);
-      const originalXML = originalDoc.toString();
 
       const recoveredDoc = await validator.validateWithRecovery(xmlPath);
-      const recoveredXML = recoveredDoc.toString();
 
       // Should be essentially the same (whitespace may differ)
       expect(recoveredDoc.documentElement.localName).toBe(originalDoc.documentElement.localName);
@@ -235,6 +233,7 @@ describe('SDC4Validator Integration', () => {
       const outputPath = join(__dirname, '../fixtures/output-saved.xml');
 
       // Clean up if exists
+      // eslint-disable-next-line no-undef
       const fs = require('fs');
       if (fs.existsSync(outputPath)) {
         fs.unlinkSync(outputPath);
@@ -253,6 +252,7 @@ describe('SDC4Validator Integration', () => {
       const xmlPath = join(__dirname, '../fixtures/valid/person-valid.xml');
       const outputPath = join(__dirname, '../fixtures/output-custom.xml');
 
+      // eslint-disable-next-line no-undef
       const fs = require('fs');
       if (fs.existsSync(outputPath)) {
         fs.unlinkSync(outputPath);

@@ -2,7 +2,7 @@
  * Unit tests for convenience functions
  */
 
-import { describe, it, expect, beforeEach, afterEach } from 'vitest';
+import { describe, it, expect, afterEach } from 'vitest';
 import { validateWithRecovery, isValid, iterErrors } from '../../src/sdc4/convenience.js';
 import { join } from 'path';
 import { existsSync, unlinkSync } from 'fs';
@@ -123,7 +123,8 @@ describe('Convenience Functions', () => {
 
     it('should allow breaking iteration early', async () => {
       let count = 0;
-      for await (const error of iterErrors(schemaPath, invalidXmlPath)) {
+      // eslint-disable-next-line no-unused-vars
+      for await (const _error of iterErrors(schemaPath, invalidXmlPath)) {
         count++;
         if (count >= 1) {
           break;

@@ -119,10 +119,30 @@ Complete documentation is available:
 - **[API Reference](./docs/api/)** - Complete API documentation
 - **[Examples](./examples/)** - Working code examples
 
-## Related Projects
+## SDC4 Ecosystem
 
-- [sdcvalidator (Python)](https://github.com/Axius-SDC/sdcvalidator) - Original Python implementation
-- [Semantic Data Charter](https://semanticdatacharter.com/) - SDC specification
+sdcvalidatorJS is the **JavaScript/TypeScript implementation** of SDC4 validation, part of the larger ecosystem:
+
+- **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.0.0 - Reference model and schemas
+- **[SDCStudio](https://github.com/AxiusSDC/SDCStudio)** v4.0.0 - Web application for model generation
+- **[sdcvalidator (Python)](https://github.com/Axius-SDC/sdcvalidator)** v4.0.1 - Python implementation
+- **[sdcvalidatorJS](https://github.com/Axius-SDC/sdcvalidatorJS)** v4.0.0 - This library (TypeScript/Node.js)
+- **[Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.0.0 - Markdown templates
+
+All SDC4 projects use **4.x.x** versioning - the MAJOR version (4) represents the SDC generation.
+
+## Related Resources
+
+- **[Semantic Data Charter](https://semanticdatacharter.github.io)** - SDC4 specification and documentation
+- **[SDCRM Repository](https://github.com/SemanticDataCharter/SDCRM)** - Schemas, examples, and guides
+
+## Support
+
+- **Documentation**: [Getting Started](./docs/guides/getting-started.md) | [API Reference](./docs/api/)
+- **Issues**: [GitHub Issues](https://github.com/Axius-SDC/sdcvalidatorJS/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/Axius-SDC/sdcvalidatorJS/discussions)
+- **Security**: See [SECURITY.md](SECURITY.md) for security policy
+- **Email**: contact@axius-sdc.com
 
 ## License
 
@@ -132,7 +152,24 @@ See [LICENSE](./LICENSE) file for details.
 
 ## Contributing
 
-Contributions are welcome! Please see our contributing guidelines (coming soon).
+We welcome contributions! Please see our comprehensive guides:
+
+- **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines and workflow
+- **[CLAUDE.md](CLAUDE.md)** - Developer guide and architecture documentation
+- **[GitHub Issues](https://github.com/Axius-SDC/sdcvalidatorJS/issues)** - Report bugs or request features
+- **[GitHub Discussions](https://github.com/Axius-SDC/sdcvalidatorJS/discussions)** - Ask questions and share ideas
+
+### Development Setup
+
+```bash
+git clone https://github.com/Axius-SDC/sdcvalidatorJS.git
+cd sdcvalidatorJS
+npm install
+npm test
+npm run build
+```
+
+See [CLAUDE.md](CLAUDE.md) for complete developer documentation.
 
 ## Versioning
 

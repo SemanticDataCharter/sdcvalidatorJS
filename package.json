@@ -1,5 +1,5 @@
 {
-  "name": "@sdc4/validator",
+  "name": "@semanticdatacharter/validator",
   "version": "4.0.0",
   "description": "SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery for Node.js",
   "keywords": [

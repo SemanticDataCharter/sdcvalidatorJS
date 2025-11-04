@@ -1,8 +1,8 @@
-# @sdc4/validator
+# @semanticdatacharter/validator
 
-[![npm version](https://img.shields.io/npm/v/@sdc4/validator.svg)](https://www.npmjs.com/package/@sdc4/validator)
+[![npm version](https://img.shields.io/npm/v/@semanticdatacharter/validator.svg)](https://www.npmjs.com/package/@semanticdatacharter/validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/node/v/@sdc4/validator.svg)](https://nodejs.org)
+[![Node.js Version](https://img.shields.io/node/v/@semanticdatacharter/validator.svg)](https://nodejs.org)
 
 SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery for Node.js.
 
@@ -10,7 +10,7 @@ SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery 
 
 ## Overview
 
-**@sdc4/validator** is a TypeScript/Node.js implementation of SDC4 validation that implements the unique "quarantine-and-tag" pattern for data quality management. Unlike traditional XML Schema validators that reject invalid data, @sdc4/validator preserves invalid data while injecting ISO 21090-based ExceptionalValue elements to flag quality issues.
+**@semanticdatacharter/validator** is a TypeScript/Node.js implementation of SDC4 validation that implements the unique "quarantine-and-tag" pattern for data quality management. Unlike traditional XML Schema validators that reject invalid data, @semanticdatacharter/validator preserves invalid data while injecting ISO 21090-based ExceptionalValue elements to flag quality issues.
 
 ### Key Features
 
@@ -25,16 +25,16 @@ SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery 
 ## Installation
 
 ```bash
-npm install @sdc4/validator
+npm install @semanticdatacharter/validator
 ```
 
 Or install globally for CLI usage:
 
 ```bash
-npm install -g @sdc4/validator
+npm install -g @semanticdatacharter/validator
 ```
 
-**Note:** The package was previously published as `sdcvalidator`. The new scoped name `@sdc4/validator` uses the official SDC4 namespace.
+**Note:** The package was previously published as `sdcvalidator`. The new scoped name `@semanticdatacharter/validator` uses the official Semantic Data Charter organization namespace.
 
 ### Requirements
 
@@ -44,7 +44,7 @@ npm install -g @sdc4/validator
 ## Quick Start
 
 ```typescript
-import { SDC4Validator } from '@sdc4/validator';
+import { SDC4Validator } from '@semanticdatacharter/validator';
 
 // Create validator with schema
 const validator = new SDC4Validator({
@@ -125,11 +125,11 @@ Complete documentation is available:
 
 ## SDC4 Ecosystem
 
-@sdc4/validator is the **JavaScript/TypeScript implementation** of SDC4 validation, part of the larger ecosystem:
+@semanticdatacharter/validator is the **JavaScript/TypeScript implementation** of SDC4 validation, part of the larger ecosystem:
 
 - **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** - Reference model and schemas
 - **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** - Reference implementation
-- **[@sdc4/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS)** - This library
+- **[@semanticdatacharter/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS)** - This library
 - **[sdc4-validator (Rust)](https://github.com/SemanticDataCharter/sdcvalidatorRust)** - Rust implementation (planned Q2 2026)
 - **[SDC Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** - Markdown templates
 

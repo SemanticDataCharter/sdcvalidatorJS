@@ -1,14 +1,16 @@
-# sdcvalidator
+# @sdc4/validator
 
-[![npm version](https://img.shields.io/npm/v/sdcvalidator.svg)](https://www.npmjs.com/package/sdcvalidator)
+[![npm version](https://img.shields.io/npm/v/@sdc4/validator.svg)](https://www.npmjs.com/package/@sdc4/validator)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Node.js Version](https://img.shields.io/node/v/sdcvalidator.svg)](https://nodejs.org)
+[![Node.js Version](https://img.shields.io/node/v/@sdc4/validator.svg)](https://nodejs.org)
 
 SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery for Node.js.
 
+> **Developed and maintained by [Axius SDC, Inc.](https://axius-sdc.com)** in support of the Semantic Data Charter community.
+
 ## Overview
 
-**sdcvalidator** is a TypeScript/Node.js implementation of SDC4 validation that implements the unique "quarantine-and-tag" pattern for data quality management. Unlike traditional XML Schema validators that reject invalid data, sdcvalidator preserves invalid data while injecting ISO 21090-based ExceptionalValue elements to flag quality issues.
+**@sdc4/validator** is a TypeScript/Node.js implementation of SDC4 validation that implements the unique "quarantine-and-tag" pattern for data quality management. Unlike traditional XML Schema validators that reject invalid data, @sdc4/validator preserves invalid data while injecting ISO 21090-based ExceptionalValue elements to flag quality issues.
 
 ### Key Features
 
@@ -23,14 +25,16 @@ SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery 
 ## Installation
 
 ```bash
-npm install sdcvalidator
+npm install @sdc4/validator
 ```
 
 Or install globally for CLI usage:
 
 ```bash
-npm install -g sdcvalidator
+npm install -g @sdc4/validator
 ```
+
+**Note:** The package was previously published as `sdcvalidator`. The new scoped name `@sdc4/validator` uses the official SDC4 namespace.
 
 ### Requirements
 
@@ -40,7 +44,7 @@ npm install -g sdcvalidator
 ## Quick Start
 
 ```typescript
-import { SDC4Validator } from 'sdcvalidator';
+import { SDC4Validator } from '@sdc4/validator';
 
 // Create validator with schema
 const validator = new SDC4Validator({
@@ -121,13 +125,13 @@ Complete documentation is available:
 
 ## SDC4 Ecosystem
 
-sdcvalidatorJS is the **JavaScript/TypeScript implementation** of SDC4 validation, part of the larger ecosystem:
+@sdc4/validator is the **JavaScript/TypeScript implementation** of SDC4 validation, part of the larger ecosystem:
 
-- **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** v4.0.0 - Reference model and schemas
-- **[SDCStudio](https://github.com/AxiusSDC/SDCStudio)** v4.0.0 - Web application for model generation
-- **[sdcvalidator (Python)](https://github.com/Axius-SDC/sdcvalidator)** v4.0.1 - Python implementation
-- **[sdcvalidatorJS](https://github.com/Axius-SDC/sdcvalidatorJS)** v4.0.0 - This library (TypeScript/Node.js)
-- **[Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** v4.0.0 - Markdown templates
+- **[SDCRM](https://github.com/SemanticDataCharter/SDCRM)** - Reference model and schemas
+- **[sdcvalidator (Python)](https://github.com/SemanticDataCharter/sdcvalidator)** - Reference implementation
+- **[@sdc4/validator (JavaScript/TypeScript)](https://github.com/SemanticDataCharter/sdcvalidatorJS)** - This library
+- **[sdc4-validator (Rust)](https://github.com/SemanticDataCharter/sdcvalidatorRust)** - Rust implementation (planned Q2 2026)
+- **[SDC Obsidian Template](https://github.com/SemanticDataCharter/SDCObsidianTemplate)** - Markdown templates
 
 All SDC4 projects use **4.x.x** versioning - the MAJOR version (4) represents the SDC generation.
 
@@ -139,10 +143,10 @@ All SDC4 projects use **4.x.x** versioning - the MAJOR version (4) represents th
 ## Support
 
 - **Documentation**: [Getting Started](./docs/guides/getting-started.md) | [API Reference](./docs/api/)
-- **Issues**: [GitHub Issues](https://github.com/Axius-SDC/sdcvalidatorJS/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/Axius-SDC/sdcvalidatorJS/discussions)
+- **Issues**: [GitHub Issues](https://github.com/SemanticDataCharter/sdcvalidatorJS/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/SemanticDataCharter/sdcvalidatorJS/discussions)
 - **Security**: See [SECURITY.md](SECURITY.md) for security policy
-- **Email**: contact@axius-sdc.com
+- **Email**: support@axius-sdc.com
 
 ## License
 
@@ -156,13 +160,13 @@ We welcome contributions! Please see our comprehensive guides:
 
 - **[CONTRIBUTING.md](CONTRIBUTING.md)** - Contribution guidelines and workflow
 - **[CLAUDE.md](CLAUDE.md)** - Developer guide and architecture documentation
-- **[GitHub Issues](https://github.com/Axius-SDC/sdcvalidatorJS/issues)** - Report bugs or request features
-- **[GitHub Discussions](https://github.com/Axius-SDC/sdcvalidatorJS/discussions)** - Ask questions and share ideas
+- **[GitHub Issues](https://github.com/SemanticDataCharter/sdcvalidatorJS/issues)** - Report bugs or request features
+- **[GitHub Discussions](https://github.com/SemanticDataCharter/sdcvalidatorJS/discussions)** - Ask questions and share ideas
 
 ### Development Setup
 
 ```bash
-git clone https://github.com/Axius-SDC/sdcvalidatorJS.git
+git clone https://github.com/SemanticDataCharter/sdcvalidatorJS.git
 cd sdcvalidatorJS
 npm install
 npm test
@@ -178,6 +182,14 @@ This package follows the SDC ecosystem semantic versioning convention:
 - **Minor version** = New features (4.1.0, 4.2.0, etc.)
 - **Patch version** = Bug fixes (4.0.1, 4.0.2, etc.)
 
+## Sponsors
+
+This project is developed and maintained by **[Axius SDC, Inc.](https://axius-sdc.com)** in support of the Semantic Data Charter community.
+
+### Trademarks
+
+"Semantic Data Charter" and "SDC4" are trademarks of Axius SDC, Inc.
+
 ---
 
-**Note:** This is the JavaScript/TypeScript port of the Python sdcvalidator package, providing equivalent functionality for Node.js ecosystems.
+**Note:** This is the JavaScript/TypeScript implementation of SDC4 validation, providing equivalent functionality to the Python reference implementation for Node.js ecosystems.

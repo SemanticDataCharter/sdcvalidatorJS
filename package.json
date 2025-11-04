@@ -1,5 +1,5 @@
 {
-  "name": "sdcvalidator",
+  "name": "@sdc4/validator",
   "version": "4.0.0",
   "description": "SDC4 (Semantic Data Charter Release 4) validator with ExceptionalValue recovery for Node.js",
   "keywords": [
@@ -16,16 +16,23 @@
     "healthcare",
     "research-data"
   ],
-  "author": "Axius SDC, Inc.",
+  "author": "Axius SDC, Inc. <support@axius-sdc.com>",
+  "contributors": [
+    "Axius SDC, Inc. <support@axius-sdc.com>"
+  ],
   "license": "MIT",
+  "funding": {
+    "type": "corporate",
+    "url": "https://axius-sdc.com"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Axius-SDC/sdcvalidatorJS.git"
+    "url": "https://github.com/SemanticDataCharter/sdcvalidatorJS.git"
   },
   "bugs": {
-    "url": "https://github.com/Axius-SDC/sdcvalidatorJS/issues"
+    "url": "https://github.com/SemanticDataCharter/sdcvalidatorJS/issues"
   },
-  "homepage": "https://github.com/Axius-SDC/sdcvalidatorJS#readme",
+  "homepage": "https://github.com/SemanticDataCharter/sdcvalidatorJS#readme",
   "engines": {
     "node": ">=18.0.0"
   },
